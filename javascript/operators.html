@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Operators</title>
+</head>
+<body>
+    <h1>JS Operators</h1>
+    <p>
+        Arithmetic Operators : +, -, *, /, % <br>
+        Logical Operators :  &gt; , &lt; , == , != ,&& ,||
+    </p>
+
+    <script>
+        //let firstNumber=8;
+        //let secondNumber=3;//initialized or hardcode
+
+        //String to Integer => data type conversion
+        let firstNumber=parseInt(prompt("Enter first Number: "));
+        let secondNumber=parseInt(prompt("Enter second number: "));
+       
+        console.log("First Number: "+firstNumber);
+        console.log("Second Number: "+ secondNumber);
+
+        let sum=firstNumber + secondNumber;
+        console.log("Addition is : "+sum);
+
+        let sub=firstNumber-secondNumber;
+        console.log("Substraction is : "+sub);
+
+        let mul=firstNumber*secondNumber;
+        console.log("Multiplication is : "+mul);
+
+        let div=firstNumber/secondNumber;
+        console.log("Division is : "+ div.toFixed(2));//.tofixed ka display show format
+
+        let mod=firstNumber%secondNumber;
+        console.log("Modulus is : "+mod);
+    </script>
+</body>
+</html>
