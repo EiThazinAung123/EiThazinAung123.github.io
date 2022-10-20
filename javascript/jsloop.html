@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loop</title>
+</head>
+<body>
+    <h1>JS Loop</h1>
+    <script>
+        /*
+        for(var i=1;i<=10;i++){
+            document.write(i + ": Hello world<br>")
+        }
+
+        for(var j=10;j>0;j--){
+            document.write(j + ": Hello J<br>")
+        }
+        */
+//unary operator ++ -- !
+//binary operator + - * / 
+        let a=10;
+        let b=20;
+        // console.log(a++);
+        // console.log(a);
+        // console.log(++a);
+        // console.log(a);
+        // let c= a++ +10;//20
+        // console.log(c);
+        // let d= a + ++b;//32
+        // console.log(d);
+        // let e= ++a + --b;//32
+        // console.log(e);
+        // let f= a-- - b++;//-8
+        // console.log(f);
+
+        // let flag=true;
+        // if(!flag){
+        //     alert("hi");
+        // }
+
+        //ask user to enter number for five times
+        //sum to get total number
+        //show result
+        // var total=0;
+        // let answer=parseInt(prompt("How many numbers? "));
+        // for(var i=1;i<=answer;i++){
+        //     let number=parseInt(prompt("Enter numbers : "));
+        //     total += number;
+            
+        // }
+        // alert("Total : "+total);
+/*
+        var sum=0;
+        let answer=parseInt(prompt("How Many Numbers: "));
+        for(var i=1;i<=answer;i++){
+            sum+=i;
+        }
+        alert("The sum of 1 to "+answer+" : "+sum);
+        */
+
+        /*nested loop
+            * * * * *
+            * * * * *
+            * * * * *
+            * * * * *
+            * * * * *
+        */
+       for(var i=1;i<=5;i++){
+        for(var j=1;j<=5;j++){
+            document.write(" * ");
+        }
+        document.write("<br>");
+       }
+
+       for(var i=1;i<=5;i++){
+        for(var j=1;j<=i;j++){
+            document.write(" * ");
+
+        }
+        document.write("<br>");
+       }
+        
+
+       /*
+            2*1=2
+            2*2=4
+       
+      for(var i=1;i<=12;i++){
+        let result=2 * i;
+        document.write("2 * "+i+" = "+result+"<br>")
+      }
+/*
+      let ans=parseInt(prompt("Enter a number : "));
+      for(var i=1;i<=12;i++){
+        let result=ans * i;
+        document.write(ans +" * "+i+" = "+result+"<br>")
+      }
+*/
+      let amount=parseInt(prompt("How many numbers: "));
+      for(var i=1;i<=amount;i++){
+        for(var j=1;j<=12;j++){
+            let res=i * j;
+            document.write(i +" * "+j +" = "+res+"<br>");
+        }
+      }
+    </script>
+</body>
+</html>
