@@ -1,0 +1,95 @@
+h1{
+    /* color: red; */
+    /* color: #f00; */
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Universal selector */ 
+/* *{
+    color: red; 
+
+
+} 
+*/
+/* Tag selector / element selector */
+h3{
+    color: green;
+    
+}
+
+/* attribute selector */
+a[title="google"]{
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+/* id selector */
+#idselector{
+    text-indent: 40px;
+    font-size: 20px;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+/* class selector */
+.classselector{
+    color: brown;
+    letter-spacing: 2px;
+}
+
+/* Descendent Selector */
+#desc a{
+    color: purple;
+}
+
+/* child selector */
+#child > a{
+    color: purple;
+}
+
+/* Pseudo Selector */
+.pseudo:link{
+    text-decoration: none;
+}
+.pseudo:hover{
+    text-decoration: underline;
+    color: red;
+}
+.pseudo:active{
+    color: green;
+}
+.pseudo:visited{
+    color: yellow;
+}
+
+/* Target */
+p:target{
+    border: 1px solid red;
+    color:green;
+}
+
+/* border */
+.borderone{
+    border: 5px dotted red;
+}
+.bordertwo{
+    border-top: 10px double green;
+    border-bottom: 10px double red;
+}
+.borderstyle{
+    border-style: solid;
+}
+.borderstylemix{
+    /* border-style: solid ; //  all four side */
+    /* border-style: solid dotted;  // t&b  l&r */
+    /* border-style: solid dashed double;  // top  left&right  bottom */
+    border-style: double solid dashed dotted; /* top right bottom left*/
+}
+.borderwidth{
+    border-width: 5px 3px 5px 3px;
+    border-style: solid;
+    border-color: brown;
+}
